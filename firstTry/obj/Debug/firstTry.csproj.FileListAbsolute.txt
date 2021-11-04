@@ -1,0 +1,16 @@
+C:\Users\mmangin\OneDrive - KNEX\Documents\development\firstTry\firstTry\bin\Debug\firstTry.exe.config
+C:\Users\mmangin\OneDrive - KNEX\Documents\development\firstTry\firstTry\bin\Debug\firstTry.exe
+C:\Users\mmangin\OneDrive - KNEX\Documents\development\firstTry\firstTry\bin\Debug\firstTry.pdb
+C:\Users\mmangin\OneDrive - KNEX\Documents\development\firstTry\firstTry\obj\Debug\firstTry.csproj.AssemblyReference.cache
+C:\Users\mmangin\OneDrive - KNEX\Documents\development\firstTry\firstTry\obj\Debug\firstTry.csproj.CoreCompileInputs.cache
+C:\Users\mmangin\OneDrive - KNEX\Documents\development\firstTry\firstTry\obj\Debug\firstTry.exe
+C:\Users\mmangin\OneDrive - KNEX\Documents\development\firstTry\firstTry\obj\Debug\firstTry.pdb
+C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\obj\Debug\firstTry.csproj.AssemblyReference.cache
+C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\obj\Debug\firstTry.csproj.CoreCompileInputs.cache
+C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\obj\Debug\firstTry.exe
+C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\obj\Debug\firstTry.pdb
+C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\bin\Debug\firstTry.exe.config
+C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\bin\Debug\firstTry.exe
+C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\bin\Debug\firstTry.pdb
+C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\bin\Debug\Figgle.dll
+C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\bin\Debug\Figgle.xml
