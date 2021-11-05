@@ -10,27 +10,28 @@ namespace firstTry
 {
     class Program
     {
-        
 
         static void Main(string[] args)
         {
             int attempts = 6;
+            string word1 = default;
+            string word2 = default;
             Console.WriteLine(FiggleFonts.Standard.Render("Linguisto"));
-
-            while (attempts > 0) 
+            
+            while (attempts > 0)
             {
                 int play = 0;
 
-                Console.WriteLine("Do you want to try? yes/no.");
+                Console.WriteLine("Do you want to try? Type yes/no.");
                 string input3 = Console.ReadLine();
 
                 if (input3 == "yes") //play = 1 app starts
                 {
                     play = 1;
-                    attempts --;
+                    attempts--;
                 }
                 else if (input3 == "no") //play = 0 app quits
-                    {
+                {
                     play = 0;
                     attempts = 0;
                     Console.WriteLine("Sorry to hear that.");
@@ -44,21 +45,15 @@ namespace firstTry
 
                 if (play == 1)
                 {
-                    Console.WriteLine("Type any word");
-                    string input1 = Console.ReadLine();
-                    string word1 = input1.ToLower();
-
-                    Console.WriteLine("Type any other word");
-                    string input2 = Console.ReadLine();
-                    string word2 = input2.ToLower();
-
-
+                    playerInput1(ref word1);
+                    playerInput2(ref word2);
+                    DictionaryCheck(word1, word2);
                     string output1 = word1 + " " + word2;
-                    DictionaryCheck(output1, word1, word2);
 
                     Console.WriteLine("You cast the spell");
                     Console.WriteLine(FiggleFonts.Standard.Render(output1));
-                    //Console.WriteLine("You typed " + output1.Length + " characters.");
+                    //Combat();
+                    Console.WriteLine("You typed " + output1.Length + " characters." + output1);
                     Console.WriteLine("You have " + attempts + " attempts left to defeat the enemy.");
                     //Console.ReadLine();
                 }
@@ -67,7 +62,7 @@ namespace firstTry
                     Console.WriteLine("Press enter to try again.");
                     Console.ReadLine();
                 }
-                
+
                 else
                 {
                     Console.WriteLine("Press enter to exit. Good bye.");
@@ -77,25 +72,99 @@ namespace firstTry
             }
             //game over
             Console.WriteLine(FiggleFonts.Standard.Render("game over"));
-            Console.WriteLine("Press enter to exit. Good bye.");
+            Console.WriteLine("Press enter to exit.");
             Console.ReadLine();
 
         }
-        static bool DictionaryCheck(string output1, string word1, string word2)
+        static void playerInput1(ref string word1)//validates only characters typed first word
+        {
+            bool check1 = false;
+            while (check1 == false)
+            {
+                Console.WriteLine("Type any word");
+                string input1 = Console.ReadLine();
+            
+                    if (input1.All(char.IsLetter))
+                    {
+                        check1 = true;
+                        word1 = input1.ToLower();
+                        break;
+                    }
+                    else
+                    {
+                        check1 = false;
+                    }
+                    if (check1 == false)
+                    {
+                        Console.WriteLine("Enter Valid Value");
+                    }
+            }
+            
+        }
+        static void playerInput2(ref string word2)//validates only characters typed second word
+        {
+            bool check2 = false;
+            
+            while (check2 == false)
+            {
+                Console.WriteLine("Type another word");
+                string input2 = Console.ReadLine();
+
+                    if (input2.All(char.IsLetter))
+                    {
+                        check2 = true;
+                        word2 = input2.ToLower();
+                        break;
+                    }
+                    else
+                    {
+                        check2 = false;
+                    }
+                    if (check2 == false)
+                    {
+                        Console.WriteLine("That wasn't a valid response.");
+                    }
+            }
+            
+
+        }
+        static bool DictionaryCheck(string word1, string word2) //returns true if both words found
         {
             string WordsAlpha = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\dictionaries\\words_alpha.txt");
-            //Console.WriteLine(output1);
-            Console.WriteLine(word1);
-            Console.WriteLine(word2);
             string[] words = File.ReadAllLines(WordsAlpha);
-            //Console.WriteLine(words[]);
-            int pos = Array.IndexOf(words, word1);
-            if (pos > -1)
+
+            int word1Check = Array.IndexOf(words, word1);
+            int word2Check = Array.IndexOf(words, word2);
+
+            if (word1Check > -1)
             {
                 Console.WriteLine("Match found");
-                return true;
+                if (word2Check > -1)
+                {
+                    Console.WriteLine("2nd match found");
+                    return true;
+                }
             }
             return false;
         }
+
+        /*static bool Dragon ()
+        {
+            int DragonHealth = 3;
+        }
+
+        static void Combat (bool DictionaryCheck)
+        {
+            int spellStrength = 0;
+
+            if (DictionaryCheck == true)
+            {
+                Console.WriteLine("All yoru base are belong to us.");
+                spellStrength++;
+            }*/
+
     }
 }
+
+
+
