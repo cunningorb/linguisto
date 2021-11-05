@@ -83,25 +83,19 @@ namespace firstTry
         }
         static bool DictionaryCheck(string output1, string word1, string word2)
         {
+            string WordsAlpha = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\dictionaries\\words_alpha.txt");
             //Console.WriteLine(output1);
             Console.WriteLine(word1);
             Console.WriteLine(word2);
-            string[] words = File.ReadAllLines("C:\\Users\\mmangin\\OneDrive - KNEX\\Documents\\GitHub\\seeSharp\\dictionaries\\words_alpha.txt");
+            string[] words = File.ReadAllLines(WordsAlpha);
             //Console.WriteLine(words[]);
-            bool found = false;
             int pos = Array.IndexOf(words, word1);
             if (pos > -1)
             {
-                found = true;
                 Console.WriteLine("Match found");
                 return true;
             }
-            else
-            {
-                found = false;
-                Console.WriteLine("No Match");
-                return false;
-            }
+            return false;
         }
     }
 }

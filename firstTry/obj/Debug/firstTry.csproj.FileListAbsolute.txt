@@ -14,3 +14,12 @@ C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\bin\Debug\fi
 C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\bin\Debug\firstTry.pdb
 C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\bin\Debug\Figgle.dll
 C:\Users\mmangin\OneDrive - Knex\Documents\GitHub\seeSharp\firstTry\bin\Debug\Figgle.xml
+D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\obj\Debug\firstTry.csproj.AssemblyReference.cache
+D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\obj\Debug\firstTry.csproj.CoreCompileInputs.cache
+D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\obj\Debug\firstTry.exe
+D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\obj\Debug\firstTry.pdb
+D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\bin\Debug\firstTry.exe.config
+D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\bin\Debug\firstTry.exe
+D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\bin\Debug\firstTry.pdb
+D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\bin\Debug\Figgle.dll
+D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\bin\Debug\Figgle.xml
