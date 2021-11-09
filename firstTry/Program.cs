@@ -16,9 +16,11 @@ namespace firstTry
             int attempts = 6;
             string word1 = default;
             string word2 = default;
+            int dragonHealth = 30;
+
             Console.WriteLine(FiggleFonts.Standard.Render("Linguisto"));
             
-            while (attempts > 0)
+            while (attempts > 0 && dragonHealth > 0)
             {
                 int play = 0;
 
@@ -36,8 +38,9 @@ namespace firstTry
                     attempts = 0;
                     Console.WriteLine("Sorry to hear that.");
                 }
+                
                 else //play = 2 app starts over
-                {
+                {      
                     Console.WriteLine("You probably typed it wrong.");
                     play = 2;
                     //Console.ReadLine();
@@ -48,14 +51,39 @@ namespace firstTry
                     playerInput1(ref word1);
                     playerInput2(ref word2);
                     DictionaryCheck(word1, word2);
-                    string output1 = word1 + " " + word2;
 
-                    Console.WriteLine("You cast the spell");
-                    Console.WriteLine(FiggleFonts.Standard.Render(output1));
-                    //Combat();
-                    Console.WriteLine("You typed " + output1.Length + " characters." + output1);
+                    string output1 = word1 + " " + word2;
+                    string output2 = word1 + word2;
+                    //int spellStrength = 0;
+                    //bool spell1 = false;
+                    //bool spell2 = false;
+                    //bool spell3 = false;
+
+                    if (word1.Length > 3)
+                    {
+                        dragonHealth -= 10;
+                        //spell1 = true;
+                        Console.WriteLine("You cast a poor spell");
+                        Console.WriteLine(FiggleFonts.Standard.Render(output1));
+                    }
+                    else if (word2.Length < 5)
+                    {
+                        dragonHealth -= 15;
+                        //spell2 = true;
+                        Console.WriteLine("You cast a good spell");
+                        Console.WriteLine(FiggleFonts.Standard.Render(output1));
+                    }
+                    else if (output2.Length ==7)
+                    {
+                        dragonHealth -= 29;
+                        //spell3 = true;
+                        Console.WriteLine("You cast a great spell");
+                        Console.WriteLine(FiggleFonts.Standard.Render(output1));
+                    }
+
+                        
+                    Console.WriteLine("You typed " + output2.Length + " characters. " + output1);
                     Console.WriteLine("You have " + attempts + " attempts left to defeat the enemy.");
-                    //Console.ReadLine();
                 }
                 else if (play == 2)
                 {
@@ -70,10 +98,22 @@ namespace firstTry
                 }
 
             }
+            //You win
+            if (dragonHealth < 1 && attempts > 0)
+            {
+                Console.WriteLine("you defeated dragon");
+                Console.WriteLine(FiggleFonts.Standard.Render("you win"));
+                Console.ReadLine();
+            }
+
             //game over
-            Console.WriteLine(FiggleFonts.Standard.Render("game over"));
-            Console.WriteLine("Press enter to exit.");
-            Console.ReadLine();
+            else
+            {
+                Console.WriteLine(FiggleFonts.Standard.Render("game over"));
+                Console.WriteLine("Press enter to exit.");
+                Console.ReadLine();
+            }
+            
 
         }
         static void playerInput1(ref string word1)//validates only characters typed first word
@@ -147,24 +187,5 @@ namespace firstTry
             }
             return false;
         }
-
-        /*static bool Dragon ()
-        {
-            int DragonHealth = 3;
-        }
-
-        static void Combat (bool DictionaryCheck)
-        {
-            int spellStrength = 0;
-
-            if (DictionaryCheck == true)
-            {
-                Console.WriteLine("All yoru base are belong to us.");
-                spellStrength++;
-            }*/
-
     }
 }
-
-
-
