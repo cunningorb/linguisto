@@ -23,3 +23,13 @@ D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\bin\Debug\firstTry.
 D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\bin\Debug\firstTry.pdb
 D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\bin\Debug\Figgle.dll
 D:\Nextcloud\coalescegames\cgDreampad\Linguisto\git\firstTry\bin\Debug\Figgle.xml
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\bin\Debug\firstTry.exe.config
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\bin\Debug\firstTry.exe
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\bin\Debug\firstTry.pdb
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\bin\Debug\Figgle.dll
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\bin\Debug\Figgle.xml
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\obj\Debug\firstTry.csproj.AssemblyReference.cache
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\obj\Debug\firstTry.csproj.CoreCompileInputs.cache
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\obj\Debug\firstTry.csproj.CopyComplete
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\obj\Debug\firstTry.exe
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\obj\Debug\firstTry.pdb

@@ -8,8 +8,23 @@ using System.IO;
 
 namespace firstTry
 {
+    class playerTry
+	{
+        public string Guess { get; set; }
+        //public string asdfasdf { get; set; }
+        //public string asdfaasdfsdf { get; set; }
+        //player types word, feed into class and it will "construct" instance of object
+        //nothing
+	}
+    
     class Program
     {
+        static int jarJarBinks (string attempt)
+                    {
+                        //attempt is string
+                        //If first word is good enough you get to type second word?
+                        return attempt.Length *3;
+                    }
 
         static void Main(string[] args)
         {
@@ -23,7 +38,12 @@ namespace firstTry
             while (attempts > 0 && dragonHealth > 0)
             {
                 int play = 0;
+                
+                playerTry firstTry = new playerTry();
+                firstTry.Guess = Console.ReadLine();
+                Console.WriteLine(firstTry.Guess);
 
+                Console.WriteLine(jarJarBinks("bloop bleep blorp"));
                 Console.WriteLine("Do you want to try? Type yes/no.");
                 string input3 = Console.ReadLine();
 
@@ -81,7 +101,8 @@ namespace firstTry
                         Console.WriteLine(FiggleFonts.Standard.Render(output1));
                     }
 
-                        
+                
+
                     Console.WriteLine("You typed " + output2.Length + " characters. " + output1);
                     Console.WriteLine("You have " + attempts + " attempts left to defeat the enemy.");
                 }

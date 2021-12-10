@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\dictionaries",
     "\\firstTry"
   ],
-  "SelectedNode": "\\firstTry.sln",
+  "SelectedNode": "\\firstTry\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
