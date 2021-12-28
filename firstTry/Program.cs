@@ -41,9 +41,11 @@ namespace firstTry
                 
                 playerTry firstTry = new playerTry();
                 firstTry.Guess = Console.ReadLine();
+                //Do I need to perform a firstTry.guess set operation here?
                 Console.WriteLine(firstTry.Guess);
 
                 Console.WriteLine(jarJarBinks("bloop bleep blorp"));
+                //Replace above with a call to jarJarBinks(); ?
                 Console.WriteLine("Do you want to try? Type yes/no.");
                 string input3 = Console.ReadLine();
 
