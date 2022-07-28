@@ -33,3 +33,4 @@ D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\obj\Debug\
 D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\obj\Debug\firstTry.csproj.CopyComplete
 D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\obj\Debug\firstTry.exe
 D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\obj\Debug\firstTry.pdb
+D:\Nextcloud\Documents\Learning\c#\git\ApptlyNamed\Linguisto\firstTry\obj\Debug\firstTry.csproj.SuggestedBindingRedirects.cache

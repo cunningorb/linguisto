@@ -11,7 +11,7 @@ namespace firstTry
     class playerTry
 	{
         public string Guess { get; set; }
-        //public string asdfasdf { get; set; }
+        //public string asdfasdfsadf { get; set; }
         //public string asdfaasdfsdf { get; set; }
         //player types word, feed into class and it will "construct" instance of object
         //nothing
@@ -19,7 +19,14 @@ namespace firstTry
     
     class Program
     {
-        static int jarJarBinks (string attempt)
+        static string captureInput()
+        {
+            playerTry inputWord = new playerTry();
+            inputWord.Guess = Console.ReadLine();
+            return inputWord.Guess;
+        }
+
+        static int guessLength (string attempt)
                     {
                         //attempt is string
                         //If first word is good enough you get to type second word?
@@ -39,12 +46,13 @@ namespace firstTry
             {
                 int play = 0;
                 
-                playerTry firstTry = new playerTry();
-                firstTry.Guess = Console.ReadLine();
+                
                 //Do I need to perform a firstTry.guess set operation here?
-                Console.WriteLine(firstTry.Guess);
+                Console.WriteLine($"you are here {captureInput()}");
+                Console.WriteLine(captureInput());
+                Console.WriteLine(guessLength(captureInput()));
 
-                Console.WriteLine(jarJarBinks("bloop bleep blorp"));
+                Console.WriteLine(guessLength("bloop bleep blorp"));
                 //Replace above with a call to jarJarBinks(); ?
                 Console.WriteLine("Do you want to try? Type yes/no.");
                 string input3 = Console.ReadLine();
@@ -70,6 +78,7 @@ namespace firstTry
 
                 if (play == 1)
                 {
+                    //wordValidation()
                     playerInput1(ref word1);
                     playerInput2(ref word2);
                     DictionaryCheck(word1, word2);
@@ -139,28 +148,28 @@ namespace firstTry
             
 
         }
+        static void wordValidate()
+        {
+
+        }
+        
         static void playerInput1(ref string word1)//validates only characters typed first word
         {
-            bool check1 = false;
-            while (check1 == false)
+            while (true)
             {
                 Console.WriteLine("Type any word");
                 string input1 = Console.ReadLine();
             
                     if (input1.All(char.IsLetter))
                     {
-                        check1 = true;
                         word1 = input1.ToLower();
                         break;
                     }
                     else
                     {
-                        check1 = false;
+                        Console.WriteLine("Enter Valid Value");    
                     }
-                    if (check1 == false)
-                    {
-                        Console.WriteLine("Enter Valid Value");
-                    }
+                    
             }
             
         }
